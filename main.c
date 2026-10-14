@@ -22,13 +22,17 @@ int main() {
     scanf(" %c", &choice);
 
     if (choice == 'n' || choice == 'N') {
+        printf("Exiting the program. Goodbye!\n"); 
         break;
     }
     else if (choice == 'y' || choice == 'Y') {
+        printf("Restarting...\n");
         continue;
     }
     else {
-        printf("Invalid input. Please enter 'y' or 'n'.\n");
+        printf("Invalid input.\n");
+        printf("Exiting the program. Goodbye!\n");
+        break;
     }
 
     }
